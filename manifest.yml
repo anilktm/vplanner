@@ -1,0 +1,9 @@
+---
+applications:
+ - name: claim-api-springboot-dev
+   random-route: true
+   path: target/claim-api-spring-boot-0.0.1-SNAPSHOT.jar
+   memory: 1024M
+   env:
+    JAVA_OPTS: '-XX:ReservedCodeCacheSize=32M -XX:MaxDirectMemorySize=32M'
+   instances: 1
